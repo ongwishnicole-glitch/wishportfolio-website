@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-serif: "Georgia", "serif";
+
+  --color-beige: #F5F5DC;
+  --color-ink: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-beige text-ink font-sans antialiased selection:bg-ink selection:text-beige;
+  }
+}
